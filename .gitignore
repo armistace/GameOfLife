@@ -1,0 +1,4 @@
+#.gitignore
+
+#I want to ignore all .swp files that get created by vim
+*.swp
