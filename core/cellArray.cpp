@@ -23,7 +23,7 @@ void CellArray::changeSize(int n_width, int n_length)
 
        
 /*
- * printBoard is dependant on the ncurses interface
+ * printBoard ncurses interface
  * it also only handles the printw() case all other functions
  * to dray on the screen will need to be called around this 
  * function
@@ -39,6 +39,11 @@ void CellArray::printBoard(WINDOW* screen)
         wprintw(screen,"\n");
     }
 }
+
+/*
+ * TODO: printBoard GTK interface
+ */
+
 
 /*
  * switch old and new state of the board

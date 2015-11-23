@@ -1,18 +1,15 @@
-#include <gtkmm.h>
+#include <iostream>
+#include <string>
+#include <cerrno>
+#include <unistd.h> //this is deprecated but I am using it to sleep
+#include "../core/cell.h"
+#include "../core/cellArray.h"
+#include "../core/functions.h"
+#include "../gtkmm/gtk_functions.h"
+#include <ncurses.h>
+#define SPEED_MULTIPLIER 10000
 
-//using gtk
 int main(int argc, char *argv[])
 {
-    Glib::RefPtr<Gtk::Builder> builder;
-    Gtk::Main kit(argc, argv);
-
-    builder =  Gtk::Builder::create_from_file("GridTest.glade");
-
-    Gtk::Window * window = 0;
-
-    builder->get_widget("mainWindow", window);
-
-    Gtk::Main::run(*window);
-
-    return 0;
 }
+

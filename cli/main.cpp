@@ -5,6 +5,7 @@
 #include "../core/cell.h"
 #include "../core/cellArray.h"
 #include "../core/functions.h"
+#include "../cli/cli_functions.h"
 #include <ncurses.h>
 #define SPEED_MULTIPLIER 10000
 
